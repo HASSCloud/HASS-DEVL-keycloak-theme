@@ -23,7 +23,7 @@ section#main {
     padding:2rem 0 3rem;
     background:#F7F7F7;
 }
-#kc-login {
+#kc-form-buttons .btn {
     background:#A9CB79;
     border:none;
     width:auto;
@@ -61,28 +61,37 @@ div.kc-logo-text {
     font-weight:500;
     font-size:16px;
 }
-#kc-social-providers a.google {
+#kc-social-providers a {
+    margin-bottom:1rem;
     height: 50px;
     width: 240px;
     padding:12px 0 0 60px;
-    background-color: #4285f4;
-    border: 1px solid #4285f4;
     color: #fff;
     display: block;
-    background-image: url(../img/google-icon.svg);
     background-repeat: no-repeat;
-    background-attachment: contain;
+    background-size: contain;
     background-attachment: left top;
     transition-delay:0s, 0s, 0s;
     transition-duration:0.218s, 0.218s, 0.218s;
     transition-property:background-color, border-color, box-shadow;
     transition-timing-function:ease, ease, ease;
 }
-#kc-social-providers a.google:hover {
+#kc-social-providers a:hover {
     text-decoration: none;
     -webkit-box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
     box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
 }
+#kc-social-providers a.google {
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    background-image: url(../img/google-icon.svg);
+}
+#kc-social-providers a#AAF {
+    background-color: #f5811d;
+    border: 1px solid #f5811d;
+    background-image: url(../img/aaf-icon.png);
+}
+
 
 #kc-form-login {
     border-right: 1px solid #ddd;
