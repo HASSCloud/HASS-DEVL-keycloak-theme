@@ -24,6 +24,9 @@ dev:
 rm:
 	docker-compose rm
 
+run:
+	docker run --rm -it -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin $(PREFIX)/$(IMAGE):$(TAG)
+
 build:
 	docker build -t $(PREFIX)/$(IMAGE):$(TAG) .
 
