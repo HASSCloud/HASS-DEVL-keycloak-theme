@@ -45,11 +45,8 @@ label {
     margin-bottom:2rem;
 }
 div.kc-logo-text {
-    background-image: url(../img/logo.svg);
-    background-repeat: no-repeat;
     width: 192px;
     height:42px;
-    background-size: contain;
 }
 #kc-header {
     height:100px;

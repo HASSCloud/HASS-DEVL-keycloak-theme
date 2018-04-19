@@ -37,7 +37,9 @@
       <div id="kc-header-wrapper" class="${properties.kcHeaderWrapperClass!}">
         <div class="row">
           <div class="col-md-12">
-            ${msg("loginTitleHtml",(realm.displayNameHtml!''))?no_esc}
+            <div class="kc-logo-text">
+              <img src="${url.resourcesPath}/img/logo.svg" alt="${msg("loginTitleHtml",(realm.displayNameHtml!''))?no_esc}" />
+            </div>
           </div>
         </div>
       </div>
