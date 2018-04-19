@@ -83,7 +83,7 @@ div.kc-logo-text {
     border: 1px solid #4285f4;
     background-image: url(../img/google-icon.svg);
 }
-#kc-social-providers a#AAF {
+#kc-social-providers a#aaf {
     background-color: #f5811d;
     border: 1px solid #f5811d;
     background-image: url(../img/aaf-icon.png);
@@ -108,7 +108,7 @@ footer#footer ul {
     list-style-type: none;
     padding-left:0;
     padding-right:1em;
-} 
+}
 footer#footer li {
     line-height: 1.2em;
     margin-bottom: .6em;
