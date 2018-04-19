@@ -27,6 +27,9 @@ rm:
 run:
 	docker run --rm -it -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin $(PREFIX)/$(IMAGE):$(TAG)
 
+bash:
+	docker run --rm -it -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin --entrypoint bash $(PREFIX)/$(IMAGE):$(TAG)
+
 build:
 	docker build -t $(PREFIX)/$(IMAGE):$(TAG) .
 
