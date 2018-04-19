@@ -3,11 +3,15 @@ version: "3"
 services:
 
   keycloak:
-    image: jboss/keycloak
+    build: .
     volumes:
       - ./theme:/opt/jboss/keycloak/themes/ecocloud
     environment:
       - KEYCLOAK_USER=admin
       - KEYCLOAK_PASSWORD=admin
+      - KEYCLOAK_THEME_STATIC_MAX_AGE=-1
+      - KEYCLOAK_THEME_CACHE_THEMES=false
+      - KEYCLOAK_THEME_CACHE_TEMPLATES=false
     ports:
       - "8080:8080"
+
