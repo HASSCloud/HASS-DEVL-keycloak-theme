@@ -1,0 +1,5 @@
+embed-server --server-config=standalone.xml --std-out=echo
+/subsystem=keycloak-server/theme=defaults: write-attribute(name=staticMaxAge, value=${env.KEYCLOAK_THEME_STATIC_MAX_AGE:2592000})
+/subsystem=keycloak-server/theme=defaults: write-attribute(name=cacheThemes, value=${env.KEYCLOAK_THEME_CACHE_THEMES:true})
+/subsystem=keycloak-server/theme=defaults: write-attribute(name=cacheTemplates, value=${env.KEYCLOAK_THEME_CACHE_TEMPLATES:true})
+stop-embedded-server
