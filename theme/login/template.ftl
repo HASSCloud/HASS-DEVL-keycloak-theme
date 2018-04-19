@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="kc-logo-text">
-              <img src="${url.resourcesPath}/img/logo.svg" alt="${msg("loginTitleHtml",(realm.displayNameHtml!''))?no_esc}" />
+              <img src="${url.resourcesPath}/img/logo.svg" alt="${msg("loginTitleHtml",(realm.displayName!''))?no_esc}" />
             </div>
           </div>
         </div>
