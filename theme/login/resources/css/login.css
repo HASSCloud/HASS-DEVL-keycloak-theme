@@ -83,6 +83,11 @@ div.kc-logo-text {
     border: 1px solid #4285f4;
     background-image: url(../img/google-icon.svg);
 }
+#kc-social-providers a#google {
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    background-image: url(../img/google-icon.svg);
+}
 #kc-social-providers a#aaf {
     background-color: #f5811d;
     border: 1px solid #f5811d;
@@ -113,8 +118,3 @@ footer#footer li {
     line-height: 1.2em;
     margin-bottom: .6em;
 }
-
-
-
-
-
