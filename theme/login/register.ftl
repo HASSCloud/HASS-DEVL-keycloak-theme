@@ -71,14 +71,14 @@
             </#if>
 
             <div class="${properties.kcFormGroupClass!}">
+                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
+                    <button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit">${msg("doRegister")} <i class="fa fa-chevron-circle-right"></i></button>
+                </div>
+                <br />
                 <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
                     <div class="${properties.kcFormOptionsWrapperClass!}">
                         <span><a href="${url.loginUrl}">${msg("backToLogin")?no_esc}</a></span>
                     </div>
-                </div>
-
-                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                    <button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit">${msg("doRegister")} <i class="fa fa-chevron-circle-right"></i></button>
                 </div>
             </div>
         </form>
