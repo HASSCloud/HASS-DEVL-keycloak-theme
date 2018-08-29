@@ -121,7 +121,7 @@
             <div class="col-md-3">
               <h3>Funded By</h3>
               <ul>
-                <li><a href="https://www.ands.org.au/about-us/ands-nectar-rds" target="_blank" title="Australian Research Data Commons">Australian Research Data Commons</a></li>
+                <li><a href="https://ardc.edu.au/" target="_blank" title="Australian Research Data Commons">Australian Research Data Commons</a></li>
               </ul>
             </div>
             <div class="col-md-3">
