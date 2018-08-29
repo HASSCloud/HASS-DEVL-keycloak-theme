@@ -125,13 +125,11 @@
               </ul>
             </div>
             <div class="col-md-3">
-              <h3>Documentation</h3>
               <ul>
-                <li><a href="#" target="_blank" rel="noopener noreferrer" title="Tutorials">Tutorials</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer" title="Support articles">Support articles</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer" title="FAQ">FAQ</a></li>
+                <li><a href="http://support.ecocloud.org.au/support/solutions" target="_blank" rel="noopener noreferrer" title="Documentation">Documentation</a></li>
+                <li><a href="https://www.ecocloud.org.au/contact/" target="_blank" rel="noopener noreferrer" title="Submit a support request">Submit a support request</a></li>
               </ul>
-              <h3>Support</h3>
+              <h3>Get in touch</h3>
               <ul>
                 <li><a href="https://www.ecocloud.org.au/contact/" target="_blank" rel="noopener noreferrer" title="Contact us">Contact us</a></li>
               </ul>
