@@ -10,7 +10,7 @@
                     <h2>${msg("loginViaUniId")}</h2>
 
                     <#if realm.password && social.providers??>
-                        <div id="kc-social-providers" class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">
+                        <div id="kc-social-providers" class="text-left ${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">
                             <h2>${properties.kcFormSocialAccountTitle!}</h2>
                             <p>${msg("socialAccountIntro")}</p>
                             <ul class="${properties.kcFormSocialAccountListClass!}">
@@ -29,7 +29,7 @@
 
                     <!-- Local account -->
                     <#if realm.password>
-                        <div id="local-account-toggle-area" class="identity-providers" style="display: none;">
+                        <div id="local-account-toggle-area" class="identity-providers text-left" style="display: none;">
                             <ul class="${properties.kcFormSocialAccountListClass!}">
                                 <li class="${properties.kcFormSocialAccountListLinkClass!}">
                                     <a href="#" class="local-account"><span>Sign in with <em>ecocloud</em></span></a>

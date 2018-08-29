@@ -94,9 +94,12 @@ div.kc-logo-text {
     background-image: url(../img/aaf-icon.png);
 }
 .identity-providers a.local-account {
-    background-color: #88aa5a;
-    border: 1px solid #88aa5a;
-    /* background-image: url(../img/google-icon.svg); */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+    background-image: url(../img/ecocloud-icon.svg);
+    background-size: 40px 40px;
+    background-position: 8px 5px;
 }
 
 footer#footer {
