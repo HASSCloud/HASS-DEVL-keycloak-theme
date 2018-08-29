@@ -1,4 +1,4 @@
-FROM jboss/keycloak:4.0.0.Beta1
+FROM jboss/keycloak:4.3.0.Final
 
 COPY files/ /opt/jboss/keycloak/cli/
 RUN cd /opt/jboss/keycloak && bin/jboss-cli.sh --file=cli/theme.cli && rm -rf /opt/jboss/keycloak/standalone/configuration/standalone_xml_history
