@@ -58,7 +58,7 @@ div.kc-logo-text {
     font-weight:500;
     font-size:16px;
 }
-#kc-social-providers a {
+.identity-providers a {
     margin-bottom:1rem;
     height: 50px;
     width: 240px;
@@ -73,32 +73,32 @@ div.kc-logo-text {
     transition-property:background-color, border-color, box-shadow;
     transition-timing-function:ease, ease, ease;
 }
-#kc-social-providers a:hover {
+.identity-providers a:hover {
     text-decoration: none;
     -webkit-box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
     box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
 }
-#kc-social-providers a.google {
+.identity-providers a.google {
     background-color: #4285f4;
     border: 1px solid #4285f4;
     background-image: url(../img/google-icon.svg);
 }
-#kc-social-providers a#google {
+.identity-providers a#google {
     background-color: #4285f4;
     border: 1px solid #4285f4;
     background-image: url(../img/google-icon.svg);
 }
-#kc-social-providers a#aaf {
+.identity-providers a#aaf {
     background-color: #f5811d;
     border: 1px solid #f5811d;
     background-image: url(../img/aaf-icon.png);
 }
-
-
-#kc-form-login {
-    border-right: 1px solid #ddd;
-    padding-right: 5rem;
+.identity-providers a.local-account {
+    background-color: #88aa5a;
+    border: 1px solid #88aa5a;
+    /* background-image: url(../img/google-icon.svg); */
 }
+
 footer#footer {
     color:white;
     padding:2.5rem 0;
@@ -118,4 +118,14 @@ footer#footer ul {
 footer#footer li {
     line-height: 1.2em;
     margin-bottom: .6em;
+}
+
+.login-via {
+    padding: 1rem;
+}
+
+.login-via-form-container {
+    padding: 1rem;
+    background: #efefef;
+    margin: 0 auto;
 }
