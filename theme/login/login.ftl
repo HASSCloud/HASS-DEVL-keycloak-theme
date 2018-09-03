@@ -10,12 +10,13 @@
                     <h2>${msg("loginViaUniId")}</h2>
 
                     <#if realm.password && social.providers??>
-                        <div id="kc-social-providers" class="text-left ${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}">
-                            <h2>${properties.kcFormSocialAccountTitle!}</h2>
-                            <p>${msg("socialAccountIntro")}</p>
+                        <div id="kc-social-providers" class="text-left ${properties.kcFormSocialAccountClass!}">
                             <ul class="${properties.kcFormSocialAccountListClass!}">
                                 <#list social.providers as p>
-                                    <li class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="${p.alias}" class="zocial ${p.providerId}"> <span>Sign in with ${p.displayName}</span></a></li>
+                                    <#-- We only render AAF here -->
+                                    <#if p.alias = "aaf">
+                                        <li class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="${p.alias}" class="zocial ${p.providerId}"> <span>Sign in with ${p.displayName}</span></a></li>
+                                    </#if>
                                 </#list>
                             </ul>
                         </div>
@@ -26,19 +27,24 @@
             <div class="login-via login-via-other">
                 <div class="${properties.loginViaFormContainerClass!}">
                     <h2>${msg("loginViaOther")}</h2>
-
-                    <!-- Local account -->
                     <#if realm.password>
-                        <div id="local-account-toggle-area" class="identity-providers text-left" style="display: none;">
+                        <div id="login-via-login-links" class="identity-providers text-left">
                             <ul class="${properties.kcFormSocialAccountListClass!}">
-                                <li class="${properties.kcFormSocialAccountListLinkClass!}">
+                                <#if realm.password && social.providers??>
+                                    <#list social.providers as p>
+                                        <#-- Note that we filter out AAF which is rendered above -->
+                                        <#if p.alias != "aaf">
+                                            <li class="${properties.kcFormSocialAccountListLinkClass!}"><a href="${p.loginUrl}" id="${p.alias}" class="zocial ${p.providerId}"> <span>Sign in with ${p.displayName}</span></a></li>
+                                        </#if>
+                                    </#list>
+                                </#if>
+                                <li id="local-account-link-entry" class="${properties.kcFormSocialAccountListLinkClass!}" style="display: none;">
                                     <a href="#" class="local-account"><span>Sign in with <em>ecocloud</em></span></a>
                                 </li>
                             </ul>
                         </div>
                         <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                             <h2>${properties.kcFormLocalAccountTitle!}</h2>
-                            <p>${msg("localAccountIntro")}</p>
                             <div class="${properties.kcFormGroupClass!}">
                                 <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
 
