@@ -68,7 +68,7 @@
             <div id="kc-content-wrapper">
 
               <#if displayMessage && message?has_content>
-                  <div class="alert alert-${message.type}">
+                  <div class="alert alert-${message.type} text-center">
                       <#if message.type = 'success'><span class="${properties.kcFeedbackSuccessIcon!}"></span></#if>
                       <#if message.type = 'warning'><span class="${properties.kcFeedbackWarningIcon!}"></span></#if>
                       <#if message.type = 'error'><span class="${properties.kcFeedbackErrorIcon!}"></span></#if>
