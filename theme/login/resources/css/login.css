@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
-body {
-    font-family: 'Cabin', sans-serif;
+html, body {
+    font: 300 16px 'Roboto', sans-serif;
     text-rendering: optimizeLegibility;
-}
+    color: rgb(60, 72, 88);
+    letter-spacing: .01rem;
+    background: #323437;
+  }
 
 .login-pf-page h1 {
     font-weight: 700;
@@ -14,23 +17,20 @@ body {
     font-weight: 700;
 }
 .login-pf-page a {
-    color:#A9CB79;
-}
-.login-pf body {
-    background:#3B3333;
+    color:rgb(216, 114, 146);
 }
 section#main {
     padding:2rem 0 3rem;
-    background:#F7F7F7;
+    background:#fff;
 }
 #kc-form-buttons .btn {
-    background:#A9CB79;
+    background:rgb(216, 114, 146);
     border:none;
     width:auto;
     padding: .5rem 4rem;
 }
 #kc-login:hover {
-    background:#95B566;
+    background:#cd4a73;
 }
 input, input.form-control, textarea, textarea.form-control, select, select.form-control, button, .btn {
     border-radius:0px;
@@ -44,14 +44,22 @@ label {
 #kc-page-title {
     margin-bottom:2rem;
 }
-div.kc-logo-text {
-    width: 192px;
-    height:42px;
-}
 #kc-header {
-    height:100px;
-    padding:30px 0;
+    height: 70px;
+    padding: 12px 0;
     background:#FFF;
+    
+    position: relative;
+    z-index: 1000;
+
+	box-shadow: 0 1px 10px -6px rgba(0,0,0,0.42),0 1px 10px 0 rgba(0,0,0,0.12),0 4px 5px -2px rgba(0,0,0,0.1);
+	text-transform: uppercase;
+
+	font-size: 0.75em;
+}
+#kc-header img {
+    width: 135px;
+    height: 46px;
 }
 .btn {
     box-shadow: none;
@@ -62,7 +70,8 @@ div.kc-logo-text {
     margin-bottom:1rem;
     height: 50px;
     width: 240px;
-    padding:12px 0 0 48px;
+    padding: 14px 0 0 48px;
+    font-weight: bolder;
     color: #fff;
     display: inline-block;
     background-repeat: no-repeat;
@@ -95,11 +104,11 @@ div.kc-logo-text {
 }
 .identity-providers a.local-account {
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(216, 114, 146);
     color: #000;
-    background-image: url(../img/ecocloud-icon.svg);
-    background-size: 40px 40px;
-    background-position: 8px 5px;
+    background-image: url(../img/tinker-icon.png);
+    background-size: 27px 34px;
+    background-position: 12px 7px;
 }
 
 footer#footer {
@@ -114,13 +123,21 @@ footer#footer h3 {
 }
 footer#footer ul {
     list-style-type: none;
-    padding-left:0;
-    padding-right:1em;
-    margin-bottom: 1.5rem;
+    padding: 0;
+    margin: 0 -15px;
 }
 footer#footer li {
     line-height: 1.2em;
-    margin-bottom: .6em;
+    display: inline-block;
+}
+footer#footer li a {
+    color: #fff;
+    opacity: 0.86;
+    font-size: 0.75em;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 15px;
+    text-transform: uppercase;
 }
 
 .login-via {

@@ -38,7 +38,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="kc-logo-text">
-              <img src="${url.resourcesPath}/img/logo.svg" alt="${msg("loginTitleHtml",(realm.displayName!''))?no_esc}" />
+              <img src="${url.resourcesPath}/img/tinker-logo.png" alt="${msg("loginTitleHtml",(realm.displayName!''))?no_esc}" />
             </div>
           </div>
         </div>
@@ -94,48 +94,16 @@
       <footer class="row-fluid" id="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <h3>Project Partners</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul>
-                    <li><a href="http://fennerschool.anu.edu.au/" target="_blank" title="Fennel School, ANU">Fennel School, ANU</a></li>
-                    <li><a href="https://www.ala.org.au/" target="_blank" title="Atlas of Living Australia">Atlas of Living Australia</a></li>
-                    <li><a href="http://www.plantphenomics.org.au/" target="_blank" title="Australian Plant Phenomics Facility">Australian Plant Phenomics Facility</a></li>
-                    <li><a href="https://www.csiro.au/en/Research/LWF" target="_blank" title="CSIRO Land and Water">CSIRO Land and Water</a></li>
-                    <li><a href="https://www.griffith.edu.au/" target="_blank" title="Griffith University">Griffith University</a></li>
-                    <li><a href="http://www.bccvl.org.au/" target="_blank" title="BCCVL">BCCVL</li></a></li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul>
-                    <li><a href="http://www.agriculture.gov.au/abares" target="_blank" title="Department of Agriculture, ABARES">Department of Agriculture, ABARES</a></li>
-                    <li><a href="http://www.environment.gov.au/" target="_blank" title="Department of the Environment and Energy">Department of the Environment and Energy</a></li>
-                    <li><a href="https://www.ersa.edu.au/" target="_blank" title="eRSA">eRSA</a></li>
-                    <li><a href="http://www.tern.org.au/" target="_blank" title="TERN">TERN</a></li>
-                    <li><a href="https://www.qcif.edu.au/" target="_blank" title="QCIF">QCIF</a></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="col-md-12">
+                <ul>
+                    <li><a href="//hasscloud.net.au/?page_id=42" target="_blank" rel="noopener noreferrer" title="About Us">About Us</a></li>
+                    <li><a href="//hasscloud.net.au/?page_id=39" target="_blank" rel="noopener noreferrer" title="Contact Us">Contact Us</a></li>
+                    <li><a href="//hasscloud.net.au/?page_id=452" target="_blank" rel="noopener noreferrer" title="Data Framework">Data Framework</a></li>
+                    <li><a href="//hasscloud.net.au/?page_id=584" target="_blank" rel="noopener noreferrer" title="Guides, Case Studies &amp; Recipes">Guides, Case Studies &amp; Recipes</a></li>
+                    <li><a href="//hasscloud.net.au/?page_id=74" target="_blank" rel="noopener noreferrer" title="Project Blog">Project Blog</a></li>
+                </ul>
             </div>
-            <div class="col-md-3">
-              <h3>Funded By</h3>
-              <ul>
-                <li><a href="https://ardc.edu.au/" target="_blank" title="Australian Research Data Commons">Australian Research Data Commons</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h3>Support</h3>
-              <ul>
-                <li><a href="http://support.ecocloud.org.au/support/solutions" target="_blank" rel="noopener noreferrer" title="Documentation">Documentation</a></li>
-              </ul>
-              <h3>Contact</h3>
-              <ul>
-                <li><a href="https://www.ecocloud.org.au/contact/" target="_blank" rel="noopener noreferrer" title="Request support">Request support</a></li>
-                <li><a href="https://www.ecocloud.org.au/contact/" target="_blank" rel="noopener noreferrer" title="Provide feedback">Provide feedback</a></li>
-              </ul>
-            </div>
-          </div>
+        </div>
         </div>
       </footer>
 

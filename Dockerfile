@@ -5,4 +5,4 @@ RUN cd /opt/jboss/keycloak && bin/jboss-cli.sh --file=cli/theme.cli && rm -rf /o
 RUN cd /opt/jboss/keycloak && bin/jboss-cli.sh --file=cli/theme_ha.cli && rm -rf /opt/jboss/keycloak/standalone/configuration/standalone_xml_history
 
 
-COPY theme/ /opt/jboss/keycloak/themes/ecocloud/
+COPY theme/ /opt/jboss/keycloak/themes/tinker/

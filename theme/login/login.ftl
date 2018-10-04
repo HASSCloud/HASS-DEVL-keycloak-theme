@@ -39,7 +39,7 @@
                                     </#list>
                                 </#if>
                                 <li id="local-account-link-entry" class="${properties.kcFormSocialAccountListLinkClass!}" style="display: none;">
-                                    <a href="#" class="local-account"><span>Sign in with <em>ecocloud</em></span></a>
+                                    <a href="#" class="local-account"><span>Sign in with Tinker</span></a>
                                 </li>
                             </ul>
                         </div>
