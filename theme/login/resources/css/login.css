@@ -35,6 +35,11 @@ section#main {
 input, input.form-control, textarea, textarea.form-control, select, select.form-control, button, .btn {
     border-radius:0px;
 }
+.form-control:focus {
+    border-color: rgb(240, 164, 187);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(244, 66, 155, 0.3);
+    box-shadow: 0 0 0 0.2rem rgba(244, 66, 155, 0.3);
+}
 label {
     margin-bottom:0.3em;
 }
@@ -84,8 +89,8 @@ label {
 }
 .identity-providers a:hover {
     text-decoration: none;
-    -webkit-box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
-    box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
+    -webkit-box-shadow: 0 0 3px 3px rgba(244, 66, 155, 0.3);
+    box-shadow: 0 0 3px 3px rgba(244, 66, 155, 0.3);
 }
 .identity-providers a.google {
     background-color: #4285f4;
