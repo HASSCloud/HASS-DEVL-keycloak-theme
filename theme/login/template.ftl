@@ -95,13 +95,6 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-                <ul>
-                    <li><a href="//hasscloud.net.au/?page_id=42" target="_blank" rel="noopener noreferrer" title="About Us">About Us</a></li>
-                    <li><a href="//hasscloud.net.au/?page_id=39" target="_blank" rel="noopener noreferrer" title="Contact Us">Contact Us</a></li>
-                    <li><a href="//hasscloud.net.au/?page_id=452" target="_blank" rel="noopener noreferrer" title="Data Framework">Data Framework</a></li>
-                    <li><a href="//hasscloud.net.au/?page_id=584" target="_blank" rel="noopener noreferrer" title="Guides, Case Studies &amp; Recipes">Guides, Case Studies &amp; Recipes</a></li>
-                    <li><a href="//hasscloud.net.au/?page_id=74" target="_blank" rel="noopener noreferrer" title="Project Blog">Project Blog</a></li>
-                </ul>
             </div>
         </div>
         </div>
