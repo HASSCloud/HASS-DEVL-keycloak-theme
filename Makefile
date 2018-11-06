@@ -16,7 +16,7 @@
 
 PREFIX = hub.bccvl.org.au/ecocloud
 IMAGE = keycloak
-TAG ?= 4.3.0.Final
+TAG ?= 4.4.0.Final-1
 
 dev:
 	docker-compose up
