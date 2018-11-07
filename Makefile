@@ -14,7 +14,7 @@
 
 .PHONY: build push pull
 
-PREFIX = hub.bccvl.org.au/ecocloud
+PREFIX = hub.bccvl.org.au/tinker
 IMAGE = keycloak
 TAG ?= 4.4.0.Final-1
 
