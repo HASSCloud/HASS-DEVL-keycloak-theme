@@ -16,7 +16,7 @@
 
 PREFIX = hub.bccvl.org.au/tinker
 IMAGE = keycloak
-TAG ?= 4.4.0.Final-1
+TAG ?= 4.4.0.Final-2
 
 dev:
 	docker-compose up
